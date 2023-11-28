@@ -16,4 +16,8 @@ import { DirectivePracticeComponent } from "./directive-practice/directive-pract
 })
 export class AppComponent {
   title = 'my-app';
+  Tittle='my-crud app'
+
+  message:string="welcome to velocity"
 }
+
