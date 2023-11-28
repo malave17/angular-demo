@@ -1,0 +1,37 @@
+<p>data-binding works!</p>
+------------------
+<h1>data binding</h1>
+
+ <h5>First Name : {{firstName}}</h5> 
+<h5>Company Name : {{companyName}}</h5>
+  
+<table>
+    <tr>
+        <td>Employee Name</td>
+        <td>{{employeeObj.employeeName}}</td>
+    </tr>
+    <tr>
+        <td>Designation</td>
+        <td>{{employeeObj.designation}}</td>
+    </tr>
+    <tr>
+        <td>Salary</td>
+        <td>{{employeeObj.salary|currency: 'INR'}}</td>
+    </tr>
+    <tr>
+        <td>Skills</td>
+        <td>{{employeeObj.skills[0]}},{{employeeObj.skills[1]}}</td>
+    </tr>
+</table>
+<br><br>
+<button type="button" [disabled]="isBtnDisaplay">Login</button>
+<img [src]="imgPath" alt=""> -->
+<h3>{{message1| lowercase}}</h3>
+<h3>{{message1| titlecase}}</h3>
+<h3>AnnualSalary {{ AnnualSalary | currency}}</h3>
+div class="container home-container border shadow mt-2 p-2">
+    <form>
+        <!-- <div class="mb-3">
+            <label for="id1" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="id1" name="pName" [(ngModel)]="productModal.productName">
+        </div> -->
